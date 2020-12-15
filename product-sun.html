@@ -1,10 +1,30 @@
----
-title: 系列鏡框 - SUNGLASSES
-layout: ./app/layout.ejs
-engine: ejs
-current: product-sun.html
----
-<div class="nav">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系列鏡框 - SUNGLASSES</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="header d-flex justify-content-between align-items-center">
+        <a href="index.html"><img class="logo" src="./assets/images/logo.png" alt="logo"></a>
+<ul class="menu d-flex">
+    <li class="item"><a href="product-otp.html" class="d-block pt-5">系列鏡框</a></li>
+    <li class="item"><a href="#" class="d-block pt-5">門市據點</a></li>
+    <li class="item"><a href="#" class="d-block pt-5">部落格</a></li>
+    <li class="item"><a href="#" class="d-block pt-5">常見問題</a></li>
+</ul>
+    </nav>
+
+    <div class="nav">
     <ul class="d-flex">
         <li>
             <a class="d-flex" href="product-otp.html">
@@ -123,3 +143,53 @@ current: product-sun.html
         </ul>
     </div>
 </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+    <div>
+        <ul class="footerMenu d-flex">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="product-otp.html">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+        </ul>
+        <ul>
+            <li class="contact d-flex">
+                <img class="phone" src="./assets/images/icon-phone.svg" alt="phone">
+                <a href="tel:+0800-000-000">0800-000-000</a>
+            </li>
+            <li class="contact d-flex">
+                <img class="mail" src="./assets/images/icon-mail.svg" alt="mail">
+                <a href="mailto:glasses@business.com">glasses@business.com</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="footericons d-flex justify-content-end">
+        <li><a href="#"><img src="./assets/images/icon-fb.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="./assets/images/icon-ig.svg" alt="instagram"></a></li>
+        <li><a href="#"><img src="./assets/images/icon-line.svg" alt="line"></a></li>
+    </ul>
+</div>
+
+<div class="footerCopyright d-flex justify-content-between align-items-center">
+    <div class="footerLogo d-flex">
+        <img src="./assets/images/logo.png" alt="logo">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+    </div>
+    <ul class="policy d-flex">
+        <li><a href="#">隱私權政策</a></li>
+        <li><a href="#">服務條款</a></li>
+    </ul>
+</div>
+        </div>
+    </footer>
+
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
