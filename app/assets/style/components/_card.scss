@@ -1,0 +1,29 @@
+.card{
+    width: 25%;
+
+    @include pad{
+         width: 50%;
+    }
+
+    @include mobile{
+        width: 100%;
+    }
+}
+
+.card-body{
+    border: 1px solid #DEE2E6;
+    padding: 16px;
+    
+    &:hover{
+        background-color: #AA06010D;
+    }
+}
+
+.card-title{
+    font-size: $font-size-sm;
+}
+
+.card-text-time{
+    font-size: $font-size-sm;
+    color: #707070;
+}

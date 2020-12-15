@@ -1,0 +1,64 @@
+.header {
+    background-color: $primary;
+    padding: 30px 88px;
+
+    @include pad {
+        padding: 30px 40px;
+    }
+
+    @include mobile {
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.menu {
+    @include mobile {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    a {
+        margin-left: 64px;
+        font-size: $h6-font-size;
+        text-decoration: none;
+        color: $info-text;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        @include pad {
+            margin-left: 40px;
+        }
+
+        @include mobile {
+           margin: 0;
+        }
+
+        &:hover {
+            border-bottom: 3px solid #fff;
+
+            @include mobile {
+                background: #fff;
+                color: $primary;
+            }
+        }
+    }
+}
+
+.item{
+    @include mobile {
+        width: 50%;
+        border:1px solid #fff;
+        text-align: center;
+    }
+}
+
+.logo{
+    @include mobile {
+        width: 48px;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
